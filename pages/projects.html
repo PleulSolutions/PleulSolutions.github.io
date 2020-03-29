@@ -19,36 +19,39 @@
           <li>
             <div class="collapsible-header"><i class="material-icons">web</i>Sites</div>
             <div class="collapsible-body"><span>
-              <ul>
-                <li>- This site, ofcourse</li>
-                <li>- Site for Meetup and Play</li>
-              </ul>
-            </span></div>
+                <ul>
+
+                  <li>- <a class="modal-trigger" href="#modalThisSite">This site, ofcourse</a>
+                  </li>
+                  <li>- Site for Meetup and Play</li>
+                  <li>- Site for SnomBot</li>
+                </ul>
+              </span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">laptop_windows</i>PC</div>
             <div class="collapsible-body"><span>
-              <ul>
-                <li>- SnomBot Editor</li>
-              </ul>
-            </span></div>
+                <ul>
+                  <li>- SnomBot Editor</li>
+                </ul>
+              </span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">android</i>Mobile Apps</div>
             <div class="collapsible-body"><span>
-              <ul>
-                <li>- Scrum Control</li>
-              </ul>
-            </span></div>
+                <ul>
+                  <li>- Scrum Control</li>
+                </ul>
+              </span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">comment</i>Discord</div>
             <div class="collapsible-body"><span>
-              <ul>
-                <li>- The Insult Generator</li>
-                <li>- SnomBot</li>
-              </ul>
-            </span></div>
+                <ul>
+                  <li>- The Insult Generator</li>
+                  <li>- SnomBot</li>
+                </ul>
+              </span></div>
           </li>
         </ul>
       </div>
@@ -69,8 +72,19 @@
       });
 
       $('.collapsible').collapsible();
+      $('.modal').modal();
     });
   </script>
 </body>
+
+<div id="modalThisSite" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
 
 </html>
