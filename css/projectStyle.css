@@ -1,0 +1,14 @@
+.ProjectHeader {
+    width: 600px;
+    margin: auto auto;
+}
+
+.ProjectHeader h1 {
+    text-align: center;
+}
+
+.ProjectHeader img {
+    margin: auto auto;
+    display: block;
+    width: 100%;
+}
