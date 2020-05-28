@@ -21,7 +21,7 @@
         </nav>
     </header>
 
-    <main role="main" class="container-lg">
+    <main role="main" class="container-lg" style="padding-bottom: 20px;">
         <div class="row">
             <div class="col-sm">
                 <div class="card">
@@ -29,7 +29,7 @@
                         <h5 class="card-title">Discord Text Generator</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Version 0.1.1</h6>
                         <p class="card-text">A simple tool that gives your discord messages a bit more style!</p>
-                        <a href="#" onclick="Click()" class="card-link">Download me!</a>
+                        <a href="#" onclick="Download('DiscordTextGenerator.zip')" class="card-link">Download me!</a>
                         <a href="./discordTextGenerator/" class="card-link">More info!</a>
                     </div>
                 </div>
@@ -39,7 +39,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Agenda Application</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Version ???</h6>
-                        <p class="card-text">My take on an application to get a better view over the coming week/month</p>
+                        <p class="card-text">
+                            My take on an application to get a better view over the coming week/month
+                        </p>
                         <a class="card-link">Download is coming!</a>
                         <a class="card-link">Info is coming!</a>
                     </div>
@@ -54,20 +56,18 @@
     </footer>
 
     <script>
-        function Click() {
-            fetch('https://pleulsolutions.github.io/downloads/DiscordTextGenerator.zip')
+        function Download(download) {
+            fetch('https://pleulsolutions.github.io/downloads/'+ download)
                 .then(resp => resp.blob())
                 .then(blob => {
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.style.display = 'none';
                     a.href = url;
-                    // the filename you want
                     a.download = 'DiscordTextGenerator.zip';
                     document.body.appendChild(a);
                     a.click();
                     window.URL.revokeObjectURL(url);
-                    alert('your file has downloaded!'); // or you know, something with better UX...
                 })
                 .catch(() => alert('oh no!'));
         }
