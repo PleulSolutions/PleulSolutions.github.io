@@ -19,3 +19,11 @@ body {
 body > .container-lg {
     padding-top: 100px;
 }
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+}
