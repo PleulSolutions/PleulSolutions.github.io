@@ -27,8 +27,7 @@
             </ul>
 
             <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-            <script
-                type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#446e80', 'Q5Q2BEHC'); kofiwidget2.draw();
+            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#446e80', 'Q5Q2BEHC'); kofiwidget2.draw();
             </script>
         </nav>
     </header>
@@ -61,6 +60,11 @@
 
                 <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
                     <div class="card-body">
+                        <p>
+                            <b>Guild only:</b> no<br />
+                            <b>Admin only:</b> no<br />
+                            <b>Cooldown:</b> 0
+                        </p>
                         <p>Gives you a list of all the commands.</p>
                     </div>
                 </div>
@@ -76,6 +80,11 @@
                 </div>
                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                     <div class="card-body">
+                        <p>
+                            <b>Guild only:</b> no<br />
+                            <b>Admin only:</b> no<br />
+                            <b>Cooldown:</b> 0
+                        </p>
                         <p>Gives you all the information (for example their usage) about a specific command.</p>
                     </div>
                 </div>
@@ -96,6 +105,11 @@
 
                 <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion2">
                     <div class="card-body">
+                        <p>
+                            <b>Guild only:</b> yes<br />
+                            <b>Admin only:</b> no<br />
+                            <b>Cooldown:</b> 60
+                        </p>
                         <p>
                             I made this command for you guys to send in your feedback, questions/suggestions or
                             bugs.<br />
@@ -123,7 +137,11 @@
                 <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion3">
                     <div class="card-body">
                         <p>
-                            <b>This command is only useable by me. (Pleul#4111)</b><br />
+                            <b>Guild only:</b> no<br />
+                            <b>Admin only:</b> yes<br />
+                            <b>Cooldown:</b> 0
+                        </p>
+                        <p>
                             I use this command to update command files without having to turn the bot off and on again.
                         </p>
                     </div>
@@ -131,7 +149,40 @@
             </div>
         </div>
 
+        <span><b>Delete</b></span>
+        <div id="accordion4">
+            <div class="card">
+                <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5"
+                            aria-expanded="true" aria-controls="collapse3">
+                            delete [userID] [startsWith]
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordion4">
+                    <div class="card-body">
+                        <p>
+                            <b>Guild only:</b> yes<br />
+                            <b>Admin only:</b> yes<br />
+                            <b>Cooldown:</b> 0
+                        </p>
+                        <p>
+                            Deletes all messages by a user that starts with the given input.<br/>
+                            Mostly used to clear messages from the bot.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h3>Dev log:</h3>
+        <p><b>Version 0.1.0:</b></p>
+        <ul>
+            <li>Updated the way I handle certain commands (guild/admin only for example)</li>
+            <li>Delete command added</li>
+        </ul>
         <p><b>Version 0.0.1:</b></p>
         <ul>
             <li>The bot will stay 'alive'</li>
