@@ -1,5 +1,5 @@
 .ProjectHeader {
-    width: 600px;
+    width: 20rem;
     margin: auto auto;
 }
 
@@ -10,5 +10,11 @@
 .ProjectHeader img {
     margin: auto auto;
     display: block;
-    width: 100%;
+    width: 100vh;
+}
+
+@media (max-width: 575.98px) {
+    .ProjectHeader img {
+        display: none;
+    }
 }
