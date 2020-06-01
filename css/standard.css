@@ -28,3 +28,17 @@ body>.container-lg {
 .nav-link {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.navMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .navPC {
+        display: none !important;
+    }
+
+    .navMobile{
+        display: inline !important;
+    }
+}
