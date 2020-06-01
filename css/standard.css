@@ -29,16 +29,23 @@ body>.container-lg {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navMobile{
+.navMobile {
     display: none;
+}
+
+.imgPC {
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 500px) {
     .navPC {
         display: none !important;
     }
-
-    .navMobile{
+    .navMobile {
         display: inline !important;
+    }
+    .imgPC {
+        margin-left: 0px;
+        display: none;
     }
 }
