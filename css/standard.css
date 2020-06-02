@@ -37,6 +37,22 @@ body>.container-lg {
     margin-left: 10px;
 }
 
+.row {
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .row {
+        margin-bottom: 0px;
+    }
+
+    .card{
+        margin-bottom: 10px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .navPC {
         display: none !important;
