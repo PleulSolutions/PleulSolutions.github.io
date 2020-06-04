@@ -73,161 +73,174 @@
 
         </p> -->
         <h3>Commands:</h3>
-        <span><b>Help</b></span>
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header" id="heading1">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
-                            aria-expanded="true" aria-controls="collapse1">
-                            help
-                        </button>
-                    </h5>
-                </div>
+        <div class="row">
+            <div class="col-sm">
+                <h5 class="card-title">Help</h5>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                    help
+                                </button>
+                            </h5>
+                        </div>
 
-                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> no<br />
-                            <b>Admin only:</b> no<br />
-                            <b>Cooldown:</b> 0
-                        </p>
-                        <p>Gives you a list of all the commands.</p>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> no<br />
+                                    <b>Admin only:</b> no<br />
+                                    <b>Cooldown:</b> 0
+                                </p>
+                                <p>Gives you a list of all the commands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
+                                    aria-expanded="false" aria-controls="collapse2">
+                                    help [command]
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> no<br />
+                                    <b>Admin only:</b> no<br />
+                                    <b>Cooldown:</b> 0
+                                </p>
+                                <p>Gives you all the information (for example their usage) about a specific
+                                    command.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="heading2">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
-                            aria-expanded="false" aria-controls="collapse2">
-                            help [command]
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> no<br />
-                            <b>Admin only:</b> no<br />
-                            <b>Cooldown:</b> 0
-                        </p>
-                        <p>Gives you all the information (for example their usage) about a specific command.</p>
+            <div class="col-sm">
+                <h5 class="card-title">Report</h5>
+                <div id="accordion2">
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                                    aria-expanded="true" aria-controls="collapse3">
+                                    report
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion2">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> yes<br />
+                                    <b>Admin only:</b> no<br />
+                                    <b>Cooldown:</b> 60
+                                </p>
+                                <p>
+                                    Use this command to send in your feedback, questions/suggestions or bugs.<br />
+                                    It will generate a report and send it back in the server.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-sm">
+                <h5 class="card-title">Reload</h5>
+                <div id="accordion3">
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4"
+                                    aria-expanded="true" aria-controls="collapse4">
+                                    reload [command]
+                                </button>
+                            </h5>
+                        </div>
 
-        <span><b>Report</b></span>
-        <div id="accordion2">
-            <div class="card">
-                <div class="card-header" id="heading3">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
-                            aria-expanded="true" aria-controls="collapse3">
-                            report
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion2">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> yes<br />
-                            <b>Admin only:</b> no<br />
-                            <b>Cooldown:</b> 60
-                        </p>
-                        <p>
-                            I made this command for you guys to send in your feedback, questions/suggestions or
-                            bugs.<br />
-                            Once used, the bot will automatically send you a DM and ask you to specify your report. When
-                            you fill this in correctly it will generate a report and send it in the bug report channel
-                            in my server.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <span><b>Reload</b></span>
-        <div id="accordion3">
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4"
-                            aria-expanded="true" aria-controls="collapse4">
-                            reload [command]
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion3">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> no<br />
-                            <b>Admin only:</b> yes<br />
-                            <b>Cooldown:</b> 0
-                        </p>
-                        <p>
-                            I use this command to update command files without having to turn the bot off and on again.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <span><b>Delete</b></span>
-        <div id="accordion4">
-            <div class="card">
-                <div class="card-header" id="heading5">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5"
-                            aria-expanded="true" aria-controls="collapse5">
-                            delete [userID] [startsWith]
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordion4">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> yes<br />
-                            <b>Admin only:</b> yes<br />
-                            <b>Cooldown:</b> 0
-                        </p>
-                        <p>
-                            Deletes all messages by a user that starts with the given input.<br />
-                            Mostly used to clear messages from the bot.
-                        </p>
+                        <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion3">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> no<br />
+                                    <b>Admin only:</b> yes<br />
+                                    <b>Cooldown:</b> 0
+                                </p>
+                                <p>
+                                    I use this command to update command files without having to turn the bot
+                                    off and on again.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <span><b>Announce</b></span>
-        <div id="accordion5">
-            <div class="card">
-                <div class="card-header" id="heading6">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6"
-                            aria-expanded="true" aria-controls="collapse6">
-                            announce [project] [version] [downloadUrl]
-                        </button>
-                    </h5>
-                </div>
+        <div class="row">
+            <div class="col-sm">
+                <h5 class="card-title">Delete</h5>
+                <div id="accordion4">
+                    <div class="card">
+                        <div class="card-header" id="heading5">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5"
+                                    aria-expanded="true" aria-controls="collapse5">
+                                    delete [userID] [startsWith]
+                                </button>
+                            </h5>
+                        </div>
 
-                <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion5">
-                    <div class="card-body">
-                        <p>
-                            <b>Guild only:</b> yes<br />
-                            <b>Admin only:</b> yes<br />
-                            <b>Cooldown:</b> 0
-                        </p>
-                        <p>
-                            Announces a new version of one of my projects to everyone who has the @Announcement role.
-                        </p>
+                        <div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordion4">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> yes<br />
+                                    <b>Admin only:</b> yes<br />
+                                    <b>Cooldown:</b> 0
+                                </p>
+                                <p>
+                                    Deletes all messages by a user that starts with the given input.<br />
+                                    Mostly used to clear messages from the bot.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-sm">
+                <h5 class="card-title">Announce</h5>
+                <div id="accordion5">
+                    <div class="card">
+                        <div class="card-header" id="heading6">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6"
+                                    aria-expanded="true" aria-controls="collapse6">
+                                    announce [project] [version] [downloadUrl]
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion5">
+                            <div class="card-body">
+                                <p>
+                                    <b>Guild only:</b> yes<br />
+                                    <b>Admin only:</b> yes<br />
+                                    <b>Cooldown:</b> 0
+                                </p>
+                                <p>
+                                    Announces a new version of one of my projects to everyone who has the @Announcement
+                                    role.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
             </div>
         </div>
 
@@ -254,7 +267,7 @@
         <ul>
             <li>The bot will stay 'alive'</li>
             <li>Report, help and reload commands added</li>
-        </ul>
+        </ul><br />
     </main>
 
     <footer class="footer">
