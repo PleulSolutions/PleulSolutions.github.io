@@ -155,7 +155,7 @@
                 <div class="card-header" id="heading4">
                     <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4"
-                            aria-expanded="true" aria-controls="collapse3">
+                            aria-expanded="true" aria-controls="collapse4">
                             reload [command]
                         </button>
                     </h5>
@@ -182,7 +182,7 @@
                 <div class="card-header" id="heading5">
                     <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5"
-                            aria-expanded="true" aria-controls="collapse3">
+                            aria-expanded="true" aria-controls="collapse5">
                             delete [userID] [startsWith]
                         </button>
                     </h5>
@@ -204,7 +204,40 @@
             </div>
         </div>
 
+        <span><b>Announce</b></span>
+        <div id="accordion5">
+            <div class="card">
+                <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6"
+                            aria-expanded="true" aria-controls="collapse6">
+                            announce [project] [version] [downloadUrl]
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion5">
+                    <div class="card-body">
+                        <p>
+                            <b>Guild only:</b> yes<br />
+                            <b>Admin only:</b> yes<br />
+                            <b>Cooldown:</b> 0
+                        </p>
+                        <p>
+                            Announces a new version of one of my projects to everyone who has the @Announcement role.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h3>Dev log:</h3>
+        <p><b>Version 0.2.0:</b></p>
+        <ul>
+            <li>Added the announce command</li>
+            <li>Updated the usage messages on every command</li>
+        </ul>
+
         <p><b>Version 0.1.1:</b></p>
         <ul>
             <li>Updated the feedback the bot gives when using a guildOnly command in DM</li>
