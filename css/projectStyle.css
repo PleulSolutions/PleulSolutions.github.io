@@ -10,7 +10,8 @@
 .ProjectHeader img {
     margin: auto auto;
     display: block;
-    width: 100%;
+    width: 20%;
+    border-radius: 50%;
 }
 
 @media (max-width: 575.98px) {
